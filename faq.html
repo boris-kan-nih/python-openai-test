@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+   <body>
+       <h1>Generated Questions from {{url}}</h1>
+       <ul>
+           {% for question in questions %}
+               <li>{{ question['question'][0] }}</li>
+               <li>{{ question['question'][-1] }}</li>
+<!--                <ol type="A">
+                   {% for option in question.options %}
+                       <li>{{ option }}</li>
+                   {% endfor %}
+               </ol> -->
+           {% endfor %}
+       </ul>
+   </body>
+</html>
+
